@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/6273c2170fff0b7e83354e9c
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+
+{
+    "name":"Dhea",
+    "email":"dhea@gmail.com",
+    "gender":"Female"
+}
+###
+PATCH  http://localhost:5000/users/6273c2170fff0b7e83354e9c
+Content-Type: application/json
+
+
+{
+    "name":"Jhon",
+    "email":"jhon@gmail.com",
+    "gender":"Male"
+}
+
+###
+DELETE   http://localhost:5000/users/6273c2170fff0b7e83354e9c
+Content-Type: application/json
+
+
